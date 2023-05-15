@@ -1,0 +1,8 @@
+Do While NoOfTables() > 0
+
+  Let vTabela = TableName(0);
+
+  Store [$(vTabela)] into 'lib://Dashboard Interno - Chapter BI:DataFiles/E_$(vTabela).qvd' (qvd);
+  Drop Table [$(vTabela)];
+
+Loop;
